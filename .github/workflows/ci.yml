@@ -69,7 +69,7 @@ jobs:
       - name: Test backup script for pg_dump
         env:
           DB_CLUSTER: "FALSE"
-          DB_EXTRA_OPTS: "-Z0"
+          DB_EXTRA_OPTS: "-Z1"
           BACKUP_SUFFIX: ".sql.gz"
           PGPASSWORD: "test"
         run: |
