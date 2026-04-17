@@ -2,6 +2,10 @@
 
 # db-backup-local
 
+ This was mostly modified by Claude and not me!
+ <br>
+ I just confirmed the changes.
+
 Backup PostgreSQL and MongoDB to the local filesystem with periodic rotating backups. Based on [prodrigestivill/docker-postgres-backup-local](https://github.com/prodrigestivill/docker-postgres-backup-local); supports a unified `DB_*` environment schema across engines.
 
 Backup multiple databases from the same host by listing them in `DB_NAME` separated by commas or spaces.
