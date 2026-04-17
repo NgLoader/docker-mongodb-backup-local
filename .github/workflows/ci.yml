@@ -54,6 +54,8 @@ jobs:
 
       - name: Install postgresql-client-18
         run: |
+          curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg
+          echo "deb https://apt.postgresql.org/pub/repos/apt jammy-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
           sudo apt-get update
           sudo apt-get install -y postgresql-client-18
 
